@@ -41,20 +41,20 @@ Welcome to the Online Book Store GUI repository! This desktop application is bui
 ## Code Overview 🔍
    
 ## Database Setup 🗄
-- -init_db() Function:
+- init_db() Function:
 
-  - -Connects to (or creates) an SQLite database file named bookstore_gui.db.
-  - -Drops the existing books table (if it exists) and creates a fresh one.
-  - -Defines the table with columns for id, title, author, price, and stock.
-  - -Inserts a predefined list of books into the table.
+  - Connects to (or creates) an SQLite database file named bookstore_gui.db.
+  - Drops the existing books table (if it exists) and creates a fresh one.
+  - Defines the table with columns for id, title, author, price, and stock.
+  - Inserts a predefined list of books into the table.
 
-- -Main Application 💻
-  - -BookstoreApp Class: This is the main class managing the GUI and the business logic:
-  - -build_gui() Constructs the main window, title label, listbox (which displays all books), and control buttons (Add to Cart, View Cart, Place Order, and Exit).
-  - -refresh_books() Retrieves book details from the database and refreshes the listbox with the latest inventory data.
-  - -add_to_cart() Adds a selected book to the cart after validating the available stock with a prompt for quantity.
-  - -view_cart() Displays a summary of cart items, including individual prices and the overall total cost.
-  - -place_order() Processes the order by:
-  - -Verifying updated stock levels.
-  - -Deducting the purchased quantities from stock.
-  - -Clearing the cart after a successful order placement.
+- Main Application 💻
+  - BookstoreApp Class: This is the main class managing the GUI and the business logic:
+  - build_gui() Constructs the main window, title label, listbox (which displays all books), and control buttons (Add to Cart, View Cart, Place Order, and Exit).
+  - refresh_books() Retrieves book details from the database and refreshes the listbox with the latest inventory data.
+  - add_to_cart() Adds a selected book to the cart after validating the available stock with a prompt for quantity.
+  - view_cart() Displays a summary of cart items, including individual prices and the overall total cost.
+  - place_order() Processes the order by:
+  - Verifying updated stock levels.
+  - Deducting the purchased quantities from stock.
+  - Clearing the cart after a successful order placement.
