@@ -1,4 +1,4 @@
-# Online Book Store GUI 😎
+# Online Book Store GUI 📘
 
 Welcome to the Online Book Store GUI repository! This desktop application is built using Python's Tkinter and simulates an online bookstore experience. It leverages SQLite as its database backend to manage book details and allows users to browse available books, add items to a shopping cart, and place orders.
 
